@@ -6,24 +6,24 @@ export default {
 
   state: {
     count: 0,
-    bodyParts: []
+    todos: []
   },
 
   effects: {
-    async queryBodyParts({}, { put }) {
-      const ret = await API.getBodyParts();
+    async queryTodoList({}, { put }) {
+      const ret = await API.getTodoList();
       put({
-        type: 'getBodyParts',
+        type: 'getTodoList',
         payload: ret
       });
     }
   },
 
   reducers: {
-    getBodyParts({ payload }, state) {
+    getTodoList({ payload }, state) {
       return {
         ...state,
-        bodyParts: payload
+        todos: payload
       };
     },
     add({}, state) {

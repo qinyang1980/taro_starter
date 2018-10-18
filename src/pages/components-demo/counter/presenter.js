@@ -9,7 +9,7 @@ const counterDispatcher = dispatcher[MODELS.MODEL_COUNTER];
 
 @connect(state => ({
   count: state[MODELS.MODEL_COUNTER].count,
-  parts: state[MODELS.MODEL_COUNTER].bodyParts
+  todos: state[MODELS.MODEL_COUNTER].todos
 }))
 export default class CounterDemo extends Component {
   config = {
@@ -24,8 +24,8 @@ export default class CounterDemo extends Component {
     counterDispatcher.dec();
   };
 
-  queryBodyParts = () => {
-    counterDispatcher.queryBodyParts();
+  queryTodoList = () => {
+    counterDispatcher.queryTodoList();
   };
 
   render() {
@@ -33,8 +33,8 @@ export default class CounterDemo extends Component {
       <View>
         <Counter count={this.props.count} onAdd={this.add} onDec={this.dec} />
         <View style="height: 5px" />
-        <Button onClick={this.queryBodyParts}>异步加载后台数据</Button>
-        {this.props.parts.map(item => {
+        <Button onClick={this.queryTodoList}>异步加载后台数据</Button>
+        {this.props.todos.map(item => {
           return (
             <View key={item.id}>
               <Text key={item.id}>{item.userId}/{item.title}/{item.completed}</Text>
