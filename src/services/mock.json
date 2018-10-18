@@ -1,0 +1,26 @@
+{
+  "medCardList": [
+    {
+      "id": 1,
+      "name": "张三",
+      "age": 29,
+      "gender": "男",
+      "idCard": "421************412",
+      "medCard": "2015371111",
+      "isDefault": true,
+      "isChild": false,
+      "phone": "17802161638"
+    },
+    {
+      "id": 2,
+      "name": "李小聪",
+      "age": 6,
+      "gender": "男",
+      "idCard": "123************888",
+      "medCard": "201537396",
+      "isDefault": false,
+      "isChild": true,
+      "phone": "13589812250"
+    }
+  ]
+}

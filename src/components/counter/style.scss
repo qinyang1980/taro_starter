@@ -1,0 +1,11 @@
+@import '../../constants/themes/index.scss';
+
+.wrapper {
+  .btn1 {
+    background-color: $thBgColor;
+  }
+
+  .btn2 {
+    background-color: $themeColor;
+  }
+}

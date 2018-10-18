@@ -1,0 +1,5 @@
+"use strict";
+
+var config = { projectName: "weapp", date: "2018-8-2", designWidth: 750, deviceRatio: { 640: 1.17, 750: 1, 828: .905 }, sourceRoot: "src", outputRoot: "dist", plugins: { babel: { sourceMap: !0, presets: ["env"], plugins: ["transform-class-properties", "transform-decorators-legacy", "transform-object-rest-spread"] }, typescript: { compilerOptions: { allowSyntheticDefaultImports: !0, baseUrl: ".", declaration: !1, experimentalDecorators: !0, jsx: "react", jsxFactory: "Nerv.createElement", module: "commonjs", moduleResolution: "node", noImplicitAny: !1, noUnusedLocals: !0, outDir: "./dist/", preserveConstEnums: !0, removeComments: !1, rootDir: ".", sourceMap: !0, strictNullChecks: !0, target: "es6" }, include: ["src/**/*"], exclude: ["node_modules"], compileOnSave: !1 } }, defineConstants: {}, copy: { patterns: [], options: {} }, weapp: { module: { postcss: { autoprefixer: { enable: !0 }, url: { enable: !0, limit: 10240 } } } }, h5: { publicPath: "/", staticDirectory: "static", module: { postcss: { autoprefixer: { enable: !0 } } } } };module.exports = function (e) {
+  return e({}, config, require("./dev.js"));
+};

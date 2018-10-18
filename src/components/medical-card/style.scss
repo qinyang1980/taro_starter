@@ -1,0 +1,49 @@
+@import '../../constants/themes/fonts.scss';
+@import '../../constants/themes/colors.scss';
+
+.container {
+  margin: 20px;
+  padding: 10px;
+  display: grid;
+  height: 150px;
+  grid-template-columns: 21fr 14fr 7fr 30fr;
+  grid-template-rows: 1fr 1fr;
+  background-color: white;
+  border-radius: 10px;
+
+  .icon {
+    margin-right: 20px;
+    width: 50.6px;
+    height: 39.1px;
+  }
+
+  .defaultIcon {
+    width: 138px;
+    height: 44px;
+  }
+
+  .item {
+    align-self: center;
+  }
+
+  .flagItem {
+    align-self: center;
+    justify-self: end;
+  }
+
+  .idItem {
+    margin: 5px;
+    align-self: center;
+    grid-column: 1 / 4;
+  }
+
+  .text {
+    color: $textGrayColor;
+    font-size: $ft14;
+  }
+
+  .name {
+    color: $textBlodColor;
+    font-size: $ft16;
+  }
+}
