@@ -1,8 +1,7 @@
 {
-  "name": "weapp",
+  "name": "taro-starter",
   "version": "1.0.0",
-  "private": true,
-  "description": "网络门诊 - 小程序端",
+  "description": "基于Taro和Zoro的小程序脚手架",
   "main": "index.js",
   "scripts": {
     "start": "gulp start",
@@ -14,7 +13,7 @@
     "dev:h5": "npm run build:h5 -- --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "互联网医疗事业部",
+  "author": "qinyang_1980@qq.com",
   "license": "MIT",
   "dependencies": {
     "@opcjs/zoro": "^2.0.9",
