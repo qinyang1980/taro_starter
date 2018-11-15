@@ -3,6 +3,10 @@ node_modules
 dist
 deploy
 
+# temp
+.temp
+.rn_temp
+
 # OSX
 #
 .DS_Store
